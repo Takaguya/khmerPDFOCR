@@ -32,5 +32,23 @@
             <button type="submit">Upload and Process</button>
         </form>
     </div>
+
+    {% if doc_text %}
+    <div class="result-container">
+        <h2>OCR and Font Detection Result</h2>
+        <p><strong>Detected Font:</strong> {{ font_name }} (Confidence: {{ font_confidence }})</p>
+        <p><strong>Document Text:</strong></p>
+        <div class="doc-content">
+            <pre>{{ doc_text }}</pre>
+        </div>
+        <br>
+        <a href="{{ url_for('download', filename=download_link) }}" class="download-button">Download DOCX</a>
+    </div>
+    {% elif error_message %}
+    <div class="error-message">
+        <p>{{ error_message }}</p>
+    </div>
+    {% endif %}
+
 </body>
 </html>

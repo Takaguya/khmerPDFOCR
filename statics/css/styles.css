@@ -62,7 +62,6 @@ body {
     font-size: 16px;  /* Font size */
 }
 
-
 /* Form Container */
 .form-container {
     max-width: 600px;
@@ -80,7 +79,6 @@ body {
     margin-bottom: 20px;
     color: #333;
 }
-
 
 .form-container label {
     font-size: 16px;
@@ -108,4 +106,74 @@ body {
 
 .form-container button:hover {
     background-color: #cc0000;
+}
+
+/* Result Container */
+.result-container {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.result-container h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.result-container p {
+    font-size: 16px;
+    color: #555;
+}
+
+.doc-content {
+    font-family: 'Courier New', monospace;
+    white-space: pre-wrap;  /* Ensures long lines break and wrap correctly */
+    word-wrap: break-word;  /* Prevents words from breaking outside the box */
+    font-size: 14px;
+    color: #333;
+    margin-top: 20px;
+    max-height: 400px; /* Limits the height of the text box */
+    overflow-y: auto; /* Adds scroll if content exceeds the height */
+    padding: 15px; /* Adds space around the text for better readability */
+    background-color: #f4f4f4; /* Light background for contrast */
+    border-radius: 8px; /* Rounded corners for a smooth look */
+    border: 1px solid #ddd; /* Subtle border for structure */
+    width: 100%; /* Ensures the box takes up full width of its container */
+    box-sizing: border-box; /* Ensures padding is included in the element's width calculation */
+}
+
+.doc-content pre {
+    margin: 0; /* Remove default margin from <pre> tag */
+    white-space: pre-wrap;  /* Ensures text wraps within the box */
+    word-wrap: break-word;  /* Prevents words from breaking outside the box */
+}
+
+
+.download-button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #990000;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.download-button:hover {
+    background-color: #cc0000;
+}
+
+.error-message {
+    padding: 15px;
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+    border-radius: 5px;
+    text-align: center;
 }
