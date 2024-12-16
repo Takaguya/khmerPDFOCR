@@ -1,6 +1,6 @@
 Flask==2.2.3
 numpy==1.23.5
-opencv-python==4.8.0.76
+opencv-python==4.7.0.72
 pytesseract==0.3.10
 tensorflow==2.18.0
 python-docx==0.8.11
